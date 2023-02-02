@@ -1,0 +1,6 @@
+JSX = JavaScript XML;
+
+normal time er html e , class namer element thakleo react er html e thakbe className;
+
+nijer component er bhitore je atribute set kora hoy , tokhon sei atribute component namer 
+object er element hoye jay;
