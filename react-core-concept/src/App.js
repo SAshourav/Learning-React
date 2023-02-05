@@ -1,13 +1,43 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   
   return (
     <div className="App">
       <Counter></Counter>
+      <ExternalUsers></ExternalUsers>
     </div>
   );
+}
+
+function ExternalUsers() {
+  const [users , setUser] = useState([]);
+  useEffect(()=>{
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then (res => res.json())
+      .then (data => setUser(data)) //useEffect and useState connection
+  },[]); //arrow function,, empty array
+  return (
+    <div>
+      <h2>External Users</h2>
+      <p>No of Users: {users.length}</p>
+      {
+        users.map(user => <User name={user.name} email={user.email}></User>)
+      /* {
+        users.map(user => <li>{user.name}</li>) //this is the one way of do that
+      }   */}
+    </div>
+  )
+}
+
+function User(props){
+  return (
+    <div style={{border: '2px solid black', margin: '20px'}}>
+      <h3>Name: {props.name}</h3>
+      <h3>E-mail: {props.email}</h3>
+    </div>
+  )
 }
 
 function Counter(){
