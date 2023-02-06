@@ -1,0 +1,8 @@
+.country{
+    background-color: cadetblue;
+    border: 2px solid gray;
+    margin: 5px;
+}
+.country img{
+    width: 150px;
+}
