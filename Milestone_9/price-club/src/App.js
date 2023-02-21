@@ -1,5 +1,7 @@
 import './App.css';
+import AssignmentMarks from './Component/AssignmentMarks/AssignmentMarks';
 import NavBar from './Component/NavBar/NavBar';
+import Pricing from './Component/Pricing/Pricing';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
         Hello world!
       </h1>
       <p className='text-2xl'>Hey You</p>
+      <Pricing></Pricing>
+      <AssignmentMarks></AssignmentMarks>
     </div>
   );
 }
