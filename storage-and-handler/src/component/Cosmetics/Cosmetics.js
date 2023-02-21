@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cosmetic from '../Cosmetic/Cosmetic';
-import {add, multiply} from '../utilities/calculate';
+import {add, multiply} from '../../utilities/calculate';
 
 
 const Cosmetics = () => {
