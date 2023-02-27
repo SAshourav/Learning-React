@@ -1,0 +1,11 @@
+.postDetails{
+    background-color: cadetblue;
+    margin: auto;
+    margin-top: 15%;
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+p{
+    color: white;
+}
